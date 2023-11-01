@@ -13,7 +13,6 @@ function api_request($endpoint, $method = 'GET', $variables = [])
         'Content-Type: application/json',
         'Authorization: Basic '. base64_encode(API_USER . ':'. API_PASS)
     );
-
     $url = API_BASE_URL . $endpoint . '/';
 
 
@@ -40,7 +39,6 @@ function api_request($endpoint, $method = 'GET', $variables = [])
     if(curl_errno($curl)){
         throw new Exception(curl_error($curl));
     }
-
     curl_close($curl);
     return json_decode($response, true);
 }
@@ -51,8 +49,9 @@ $variaveis = [
     'data' => 1234
 ];
 
+echo '<pre>';
 
-$resultados = api_request('get_datetime', 'GET', $variaveis);
+$resultados = api_request('get_datetime');
 
 print_r($resultados);
 

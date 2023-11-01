@@ -14,6 +14,10 @@ define("ROOT", true);
         $rota = 'login_submit';
     } else {
         $rota = 'home';
+
+        if(isset($_GET['r'])){
+            $rota = $_GET['r'];
+        }
     }
 
     switch($rota){
@@ -25,6 +29,21 @@ define("ROOT", true);
             break;
         case 'home':
             require_once('bo/home.php');
+            break;
+        case 'new_client':
+            require_once('bo/new_client.php');
+            break;
+        case 'client_delete':
+            require_once('bo/client_delete.php');
+            break;
+        case 'client_delete_ok':
+            require_once('bo/client_delete_ok.php');
+            break;
+        case 'client_recover':
+            require_once('bo/client_recover.php');
+            break;
+        case 'client_edit':
+            require_once('bo/client_edit.php');
             break;
         default:
             echo 'Rota não definida';

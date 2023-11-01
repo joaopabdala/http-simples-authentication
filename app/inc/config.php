@@ -1,9 +1,9 @@
 <?php 
 
 
-define('API_BASE_URL', 'http://localhost/API/http_simple_authentication/api/');
-define('API_USER', '2b6wSXQjvzHI5jmJEG8Fq6rBxpSfpEkC');
-define('API_PASS', 'B1IHhpd07CrwXLcrnKq2KK5MYBHHREjY');
+define('API_BASE_URL', 'http://localhost/http-simples-authentication/api/');
+define('API_USER', 'EH23P7nEFZNBtfkvhlgwqAQ26CUc1ivo');
+define('API_PASS', 'AqCmNi9hyesRqQGcU0yv2Igo99hYM9Qf');
 // define('API_PASS', 'FesoB3F14jaAwd4BCPWBZgEfBqElR2D');
 
 //Dtp1GhIaMcYqm2BNJCtSn38KQssJYCL1
